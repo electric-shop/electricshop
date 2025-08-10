@@ -1482,7 +1482,7 @@ function showInquiry(productName) {
                 gap: 0.5rem;
             ">
                 <i class="fas fa-phone"></i>
-                9814324518
+                99*******9
             </div>
             <p style="color: #666; font-size: 0.9rem;">
                 ${getTranslatedText('our_team_will_assist')}
@@ -1536,7 +1536,7 @@ function showInquiry(productName) {
 }
 
 function callNumber() {
-    window.open('tel:9814324518', '_self');
+    window.open('tel:99*******9', '_self');
 }
 
 function openDirections() {
