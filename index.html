@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electric Shop - Your Trusted Electrical Store</title>
-    <link rel="icon" href="images/tab_image.png">
+    <link rel="icon" href="images/tab_image_final.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -12,7 +12,7 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <img src="images/logo.PNG" 
+                <img src="images/tab_image_final.png" 
      alt="Electric Shop Logo" 
      style="margin-right: -10%; padding-top: 3%; height: 70px;">
                 <h1 data-translate="electric_shop">Electric Shop</h1>
@@ -21,8 +21,8 @@
                 <ul>
                     <li><a href="#home" data-translate="home">Home</a></li>
                     <li><a href="#products" data-translate="products">Products</a></li>
-                    <li><a href="#repairs" data-translate="Services">Services</a></li>
-                    <li><a href="#contact" data-translate="contact">Contact</a></li>
+                    <li><a href="#repairs" data-translate="services">Services</a></li>
+                    
                 </ul>
             </nav>
             <div class="header-right">
@@ -36,8 +36,10 @@
                 </div>
                 <div class="contact-info">
                     <i class="fas fa-phone"></i>
-                    <span>
-99*******9</span>
+                    <span>99*******9</span>
+                    <button onclick="openDirections()" class="directions-btn" title="Get Directions">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -51,11 +53,11 @@
                 
                 <div class="delivery-banner">
                     <i class="fas fa-truck"></i>
-                    <span data-translate="free_delivery">Free Home Delivery on orders above ₹2000</span>
+                    <span data-translate="free_delivery_text">Free delivery on orders above ₹2000 possible – applicable when ordering via our contact number</span>
                 </div>
                 <div class="hero-buttons">
                     <a href="#products" class="cta-button" data-translate="view_products">View Products</a>
-                    <a href="#contact" class="cta-button secondary" data-translate="call_us">Call Us</a>
+                    <a href="tel:99*******9" class="cta-button secondary" data-translate="call_us">Call Us</a>
                 </div>
             </div>
             <div class="hero-decoration">
@@ -119,22 +121,7 @@
                         </button>
                     </div>
 
-                    <div class="repair-card">
-                        <i class="fas fa-industry"></i>
-                        <h3 data-translate="commercial_electrical">Commercial Electrical</h3>
-                        <ul>
-                            <li data-translate="office_wiring">Office Wiring & Installation</li>
-                            <li data-translate="shop_electrical">Shop Electrical Work</li>
-                            <li data-translate="industrial_repair">Industrial Equipment Repair</li>
-                            <li data-translate="power_distribution">Power Distribution Setup</li>
-                            <li data-translate="commercial_fan">Commercial Fan Installation</li>
-                            <li data-translate="emergency_lighting">Emergency Lighting Systems</li>
-                        </ul>
-                        <button onclick="showInquiry('Commercial Electrical Repair')" class="repair-btn">
-                            <i class="fas fa-phone"></i> <span data-translate="get_quote">Get Quote</span>
-                        </button>
-                    </div>
-
+                    
                     <div class="repair-card">
                         <i class="fas fa-cog"></i>
                         <h3 data-translate="equipment_repair">Equipment Repair</h3>
@@ -156,59 +143,14 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section">
-            <div class="container">
-                <h2 data-translate="get_in_touch">Get In Touch</h2>
-                <p class="section-subtitle" data-translate="contact_subtitle">We're here to help with all your electrical needs</p>
-                
-                <div class="contact-grid">
-                    
-
-                    <div class="contact-info-card">
-                        <div class="contact-header">
-                            <i class="fas fa-clock"></i>
-                            <h3 data-translate="business_hours">Business Hours</h3>
-                        </div>
-                        <div class="hours">
-                            <p><strong data-translate="monday_saturday">Monday - Saturday:</strong> 9:00 AM - 8:00 PM</p>
-                            <p><strong data-translate="sunday">Sunday:</strong> 10:00 AM - 6:00 PM</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-header">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <h3 data-translate="visit_store">Visit Our Store</h3>
-                        </div>
-                        <p data-translate="store_address">Electric Shop, Main Street</p>
-                        <p data-translate="store_location">Your City, State - PIN</p>
-                        <button onclick="openDirections()" class="contact-btn secondary">
-                            <i class="fas fa-directions"></i> <span data-translate="get_directions">Get Directions</span>
-                        </button>
-                    </div>
-
-                    <div class="contact-info-card">
-                        <div class="contact-header">
-                            <i class="fas fa-truck"></i>
-                            <h3 data-translate="home_delivery">Home Delivery</h3>
-                        </div>
-                        <p><strong data-translate="free_delivery_text">Free delivery</strong> <span data-translate="delivery_condition">on orders above ₹2000</span></p>
-                        <p data-translate="professional_installation">Professional installation included</p>
-                        <button onclick="showInquiry('Home Delivery Service')" class="contact-btn primary">
-                            <i class="fas fa-info-circle"></i> <span data-translate="learn_more">Learn More</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+            </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3 data-translate="electric_shop">Electric Shop</h3>
-                    <p data-translate="footer_description">Your trusted partner for all electrical needs since 2010</p>
+                    <p data-translate="footer_description">Your trusted partner for all electrical needs </p>
                     
                     <div class="social-links">
                         <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -220,17 +162,14 @@
                     <ul>
                         <li><a href="#home" data-translate="home">Home</a></li>
                         <li><a href="#products" data-translate="products">Products</a></li>
-                        <li><a href="#repairs" data-translate="repairs">Repairs</a></li>
-                        <li><a href="#products" onclick="filterProducts('wires')" data-translate="wires">Wires</a></li>
-                        <li><a href="#products" onclick="filterProducts('switches')" data-translate="switches">Switches</a></li>
-                        <li><a href="#contact" data-translate="contact">Contact</a></li>
-                    </ul>
+                        <li><a href="#repairs" data-translate="services">Services</a></li>
+                                            </ul>
                 </div>
                 <div class="footer-section">
                     <h3 data-translate="contact_info">Contact Info</h3>
                     <p><i class="fas fa-phone"></i> 
 99*******9</p>
-                    <p><i class="fas fa-envelope"></i> info@electricshop.com</p>
+                    <p><i class="fas fa-envelope"></i> example@electricshop.com</p>
                     <p><i class="fas fa-map-marker-alt"></i> <span data-translate="footer_address">Main Street, Your City</span></p>
                     
                 </div>
@@ -239,7 +178,6 @@
                     <ul>
                         <li data-translate="electrical_installation">Electrical Installation</li>
                         <li data-translate="product_sales">Product Sales</li>
-                        <li data-translate="emergency_repairs">Emergency Repairs</li>
                         <li data-translate="home_delivery">Home Delivery</li>
                         <li data-translate="wiring_services">Wiring Services</li>
                         <li data-translate="consultation">Consultation</li>
@@ -247,8 +185,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Electric Shop. <span data-translate="all_rights_reserved">All rights reserved.</span></p>
-                <p class="gst-footer">GST: 22****************5</p>
+                                <p class="gst-footer">GST: 22****************5</p>
             </div>
         </div>
     </footer>

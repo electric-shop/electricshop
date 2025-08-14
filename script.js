@@ -5,7 +5,7 @@ const translations = {
         electric_shop: "Electric Shop",
         home: "Home",
         products: "Products",
-        repairs: "Repairs",
+        services: "Services",
         wires: "Wires",
         switches: "Switches",
         about: "About",
@@ -15,6 +15,7 @@ const translations = {
         welcome_title: "Welcome to Electric Shop",
         welcome_subtitle: "Your trusted partner for all electrical needs",
         free_delivery: "Free Home Delivery on orders above ₹2000",
+        free_delivery_text: "Free delivery on orders above ₹2000 possible – applicable when ordering via our contact number",
         view_products: "View Products",
         call_us: "Call Us",
         
@@ -87,13 +88,13 @@ const translations = {
         store_location: "Your City, State - PIN",
         get_directions: "Get Directions",
         home_delivery: "Home Delivery",
-        free_delivery_text: "Free delivery",
+        free_delivery_text: "Free delivery on orders above ₹2000 possible – applicable when ordering via our contact number",
         delivery_condition: "on orders above ₹2000",
         professional_installation: "Professional installation included",
         learn_more: "Learn More",
         
         // Footer
-        footer_description: "Your trusted partner for all electrical needs since 2010",
+        footer_description: "Your trusted partner for all electrical needs",
         quick_links: "Quick Links",
         contact_info: "Contact Info",
         footer_address: "Main Street, Your City",
@@ -163,7 +164,7 @@ const translations = {
         electric_shop: "इलेक्ट्रिक शॉप",
         home: "होम",
         products: "प्रोडक्ट्स",
-        repairs: "मरम्मत",
+        services: "सेवाएं",
         wires: "तार",
         switches: "स्विच",
         about: "हमारे बारे में",
@@ -173,6 +174,7 @@ const translations = {
         welcome_title: "इलेक्ट्रिक शॉप में आपका स्वागत है",
         welcome_subtitle: "आपकी सभी विद्युत आवश्यकताओं के लिए विश्वसनीय साझेदार",
         free_delivery: "₹2000 से ऊपर के ऑर्डर पर मुफ्त होम डिलीवरी",
+        free_delivery_text: "₹2000 से ऊपर के ऑर्डर पर मुफ्त डिलीवरी संभव है – हमारे संपर्क नंबर के माध्यम से ऑर्डर करने पर लागू",
         view_products: "प्रोडक्ट्स देखें",
         call_us: "हमें कॉल करें",
         
@@ -245,13 +247,13 @@ const translations = {
         store_location: "आपका शहर, राज्य - पिन",
         get_directions: "दिशा-निर्देश प्राप्त करें",
         home_delivery: "होम डिलीवरी",
-        free_delivery_text: "मुफ्त डिलीवरी",
+        free_delivery_text: "₹2000 से ऊपर के ऑर्डर पर मुफ्त डिलीवरी संभव है – हमारे संपर्क नंबर के माध्यम से ऑर्डर करने पर लागू",
         delivery_condition: "₹2000 से ऊपर के ऑर्डर पर",
         professional_installation: "पेशेवर इंस्टॉलेशन शामिल",
         learn_more: "और जानें",
         
         // Footer
-        footer_description: "2010 से आपकी सभी विद्युत आवश्यकताओं के लिए विश्वसनीय साझेदार",
+        footer_description: "आपकी सभी विद्युत आवश्यकताओं के लिए विश्वसनीय साझेदार",
         quick_links: "त्वरित लिंक",
         contact_info: "संपर्क जानकारी",
         footer_address: "मेन स्ट्रीट, आपका शहर",
@@ -746,8 +748,11 @@ let currentFilter = 'all';
 document.addEventListener('DOMContentLoaded', () => {
     // Load saved language preference
     const savedLanguage = localStorage.getItem('preferredLanguage');
+    
     if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'hi')) {
         changeLanguage(savedLanguage);
+    } else {
+        changeLanguage('en');
     }
     
     renderProducts();
