@@ -29,6 +29,10 @@ header {
     border-bottom: 3px solid #667eea;
 }
 
+.font-color {
+color: #595959;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -547,10 +551,13 @@ nav a:hover::after {
     border-color: #667eea;
 }
 
-.repair-card i {
-    font-size: 3rem;
-    color: #667eea;
-    margin-bottom: 1rem;
+repair-card i {
+    padding-bottom: -7%;
+    margin-bottom: -43%;
+    padding: 2% !important;
+    font-size: 1rem;
+    color: #595959;
+    margin-bottom: 0rem;
 }
 
 .repair-card h3 {
