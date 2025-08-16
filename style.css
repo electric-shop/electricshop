@@ -46,6 +46,8 @@ color: #595959;
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: -8%;
+    margin-top: -8%;
 }
 
 .logo i {
@@ -1018,6 +1020,7 @@ footer {
     nav ul {
         gap: 1rem;
         justify-content: center;
+	margin-top: -1%;
     }
     
     nav a {
@@ -1033,11 +1036,15 @@ footer {
     
     .language-selector {
         align-self: center;
+        margin-top: -3% !important;
+        margin-bottom: -4%;
     }
     
     .contact-info {
         font-size: 0.9rem;
         padding: 6px 12px;
+        margin-bottom: -4%;
+        margin-top: -1%;
     }
     
     .hero-content h2 {
