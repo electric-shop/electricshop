@@ -163,7 +163,7 @@ nav a:hover::after {
 }
 
 .directions-btn {
-    background: #625df6;
+    background: #667eea;
     color: white;
     border: none;
     padding: 0.5rem;
@@ -1259,3 +1259,4 @@ footer {
     background: #f39c12;
 
 } 
+
